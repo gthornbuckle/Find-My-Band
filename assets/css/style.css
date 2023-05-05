@@ -1,0 +1,184 @@
+:root {
+    --background: #000000;
+    --darkblue: #14213D;
+    --button: #FCA311;
+    --buttonHover: #db8e13;
+    --container: #E5E5E5;
+    --text: #FFFFFF;
+}
+
+body{
+    background-color: var(--background);
+}
+
+nav{
+    background-color: var(--darkblue);
+}
+
+section{
+    height:auto;
+}
+
+#main-search-box{
+    background-color: var(--darkblue);
+    color: var(--text);
+    transform: translateY(20vh);
+    border-radius: 10px;
+}
+
+#artist-bio{
+    background-color: var(--darkblue);
+    color: var(--text);
+    height: fit-content;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    
+}
+
+.btn{
+    background-color: var(--button);
+    border-color: var(--button);
+    color: var(--text);
+}
+
+.btn:hover{
+    background-color: var(--buttonHover);
+    border-color: var(--buttonHover);
+}
+
+.btn:focus{
+    background-color: var(--buttonHover);
+    border-color: var(--buttonHover);
+}
+
+.btn:active{
+    background-color: var(--buttonHover) !important;
+    border-color: var(--buttonHover) !important;
+}
+
+.jumbotron{
+    background-color: var(--container);
+    background-image: url(../images/concert-bg.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:90vh;
+}
+
+.modal-content{
+    background-color: var(--darkblue);
+    color: var(--text);
+}
+
+.close {
+    color: var(--text); 
+    opacity: 1;
+}
+
+.close:hover {
+    color: var(--container); 
+    opacity: 1;
+}
+
+footer{
+    position: sticky;
+}
+
+.artistBio{
+    width:200px;
+    height: 200px;
+    position: fixed;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: 1;
+    left: 100px;
+    top: 100px;
+}
+
+#events-list{
+    color: var(--text);
+    width: 100%;
+}
+
+.event-carousel-indicators{
+    width:100%;
+}
+
+.card{
+    background-color: var(--darkblue);
+}
+
+.card .btn{
+    margin: 1%;
+}
+
+.card-body{
+    background-color: var(--darkblue);
+    padding: 2%;
+    justify-content: center;
+}
+
+.map-display{
+    display: flex;
+    flex-direction: column;
+}
+
+#saved-events{
+    background-color: var(--darkblue);
+    color:var(--text);
+    min-height:20%;
+    transform: translateY(10vh);
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+}
+
+.hide{
+   display:none;
+}
+
+#saved-events{
+    background-color: var(--darkblue);
+    color: var(--text);
+}
+
+@media only screen and (max-width: 600px){
+    .artistBio{
+        display:none;
+    }
+}
+
+.distance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 450px;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: absolute;
+    top: 20%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+  }
+  
+  .distance .flex {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .distance p {
+    font-size: 0.9rem;
+    margin: 0.4rem 0 0.2rem;
+  }
+  
+  .btn-close {
+    transform: translate(10px, -20px);
+    border: none;
+    padding: 0.5rem 0.7rem;
+    background-color: var(--container);
+    margin-top: 0.2rem;
+  }
+  
